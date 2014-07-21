@@ -90,12 +90,7 @@ section{
 	}
 	&#process{
 		background: #e6f3f7;
-		p.help-block{
-			margin-top: 30px;
-			text-align: center;
-			font-style: italic;
-			margin-bottom: 0;
-		}
+
 	}
 	&#quote{
 		color: #fff;
@@ -118,6 +113,23 @@ section{
 		.page-header{
 			padding-bottom: 0;
 		}
+	}
+}
+
+p.help-block{
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+textarea{
+	resize: none;
+}
+
+.form-control{
+	&:focus {
+		box-shadow: none;
+		border-color:  darken(#19556D, 5%);
 	}
 }
 
@@ -180,15 +192,15 @@ section{
 }
 
 .btn.btn-embossed {
-  -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
 }
 .btn.btn-embossed.active,
 .btn.btn-embossed:active {
-  -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn:focus{
