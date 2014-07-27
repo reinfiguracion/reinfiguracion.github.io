@@ -51,7 +51,9 @@ h1, h2, h3, h4, h5, h6
 	font-family: $lead-font;
 	line-height: 1.1;
 }
-
+p{
+	font-family: $lead-font;
+}
 .highlight{
 	color:$link-color;
 }
@@ -86,6 +88,10 @@ section{
 	}
 	&#services{
 		background: #f8f8f8;
+		color: $bluewood;
+	}
+	&#work{
+		background: #fff;
 		color: $bluewood;
 	}
 	&#process{
@@ -131,6 +137,28 @@ textarea{
 		box-shadow: none;
 		border-color:  darken(#19556D, 5%);
 	}
+}
+
+#typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }
 
 
