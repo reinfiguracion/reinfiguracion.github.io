@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>iPhone 6 Giveaway</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body">
+				<img src="mock.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+
+	<script>
+
+		$( window ).load(function() {
+			$('#myModal').modal('show')
+		});
+	</script>
 </body>
 </html>

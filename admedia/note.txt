@@ -1,0 +1,53 @@
+Hey Rein,
+You have 24 hours to complete the assignment and to return the file. If you have any questions please let me know.
+
+Please build a responsive mobile optimized 1 page landing page that is graphically attractive, original and engages the user. Make sure the important items are highlighted and really stand out.
+
+You can use as many graphics and pictures as you would like.
+
+The site should be less than 1 MB (as small as possible) in size and load in less than 1 second (fast as possible).
+
+As it is mobile optimized it should look good on most mobile devices.
+
+
+You are promoting a contest for a chance to win the Apple iPhone 6.
+
+Here is the text and the site flow that you will use within on the lander.
+The { } bracketed items you will pull dynamically.
+
+Javascript pop up when user loads site. Text: "Congratulations! You qualify for a chance to win the iPhone 6."
+Option to click OK
+
+Lander:
+{Full Date}  (can put this in the corner)
+TEXT:
+Congratulations {device name} user!
+
+Every {day of the week} we give away (1) chance to win an iPhone 6. You have been selected for a chance at the new iPhone.
+
+Please answer the following questions to put yourself in the running for the contest. You have {countdown time starting from 1 min 59 seconds} to complete the quiz or we will find the next qualified user.
+
+(Instructions: please just show 1 question on the page at once, and use javascript to roll through to the next question once it has been answered.)
+
+What country is Apple from?
+
+a. USA
+b. Canada
+c. Germany
+
+Who won the World Cup this summer?
+a. USA
+b. Canada
+c. Germany
+
+What country shares the largest border with the US?
+a. Mexico
+b. Canada
+c. Germany
+
+(Instructions: After answering the third question, show some type of 'thinking' icon with the text:
+"We are evaluating your answers"
+"You scored {provide score out of 3"
+"Congratulations! You qualify for a chance at the iPhone 6"
+
+(Instructions: Then redirect the user to www.google.com )
