@@ -68,8 +68,8 @@ h6,.h6 {@include font-size(12px); }
 		background   : url("#{$imagePath}/lawyer-banner.jpg") center center no-repeat;
 		background-size: cover;
 	}
-	&.lawyers{
-		background   : url("#{$imagePath}/lawyer-banner.jpg") center center no-repeat;
+	&.business{
+		background   : url("#{$imagePath}/business-banner.jpg") center center no-repeat;
 		background-size: cover;
 	}
 }

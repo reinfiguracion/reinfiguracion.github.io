@@ -108,8 +108,8 @@ h6, .h6 {
   background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/lawyer-banner.jpg") center center no-repeat;
   background-size: cover;
 }
-.jumbotron.lawyers {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/lawyer-banner.jpg") center center no-repeat;
+.jumbotron.business {
+  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/business-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 
