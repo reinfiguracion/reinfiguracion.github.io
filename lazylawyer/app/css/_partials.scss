@@ -1,0 +1,46 @@
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic,600italic,700italic";
+
+//Variables
+$base-font-size  :16px;
+$base-line-height:24px;
+$link-color      : #13b5ea;
+$headline-color  : #424242;
+$content-color   : #646464;
+$source-sans: "Source Sans Pro","Helvetica Neue", Helvetica, Arial, sans-serif;
+$times      : "Times New Roman", Times, serif;
+$serif      : "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Mixins
+@mixin font($ff,$fw: normal, $fs: normal){
+	font-family: $ff;
+	font-weight: $fw;
+	font-style : $fs;
+}
+@mixin font-size($size: $base-font-size,$lh: $base-line-height) {
+	font-size    : $size;
+	line-height  : ceil($size / $lh) * ($lh / $size);
+	margin-bottom: $lh - 5;
+}
+@mixin SourceSans-Lt{@include font($source-sans,300,normal); }
+@mixin SourceSans-Reg{@include font($source-sans,normal,normal); }
+@mixin SourceSans-It{@include font($source-sans,normal,italic);}
+@mixin SourceSans-Sb{@include font($source-sans,600,normal);}
+@mixin SourceSans-SbIt{@include font($source-sans,600,italic);}
+@mixin SourceSans-B{@include font($source-sans,700,normal);}
+@mixin SourceSans-BIt{@include font($source-sans,700,italic);}
+
+@mixin size($w,$h){
+	width : $w;
+	height: $h;
+}
+
+@mixin btn($color, $bg){
+	color           : $color;
+	background-color: $bg;
+	border-color    : darken($bg, 5%);
+	&:hover, &:focus, &:active, &.active {
+		color           : $color;
+		background-color: darken($bg, 10%);
+		border-color    : darken($bg, 10%);
+	}
+}

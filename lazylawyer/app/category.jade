@@ -1,0 +1,71 @@
+extends _layout
+block content
+  .jumbotron.category
+    .container-fluid
+      .row
+        .col-md-12
+          ol.breadcrumb
+            +item-linked('#','Home')
+            li.active Contracts: The Legal Essentials
+        .col-md-8
+          h1 Contracts: The Legal Essentials
+
+  section.featured.alt
+    .container
+      .row
+        .col-md-4
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +category-product(
+            "Contract for Services Rendered Document Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+        .col-md-4
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+        .col-md-4
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +category-product(
+            "Debt Collection Letter Template",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +category-product(
+            "Agreement",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+      .row: .col-md-12: .text-center
+        ul.pagination.pagination-lg
+          li.disabled
+            a(href="#") &#171;
+          li.active: a(href="#") 1
+            span.sr-only (current)
+          each val in [2, 3, 4, 5, 6, 7, 8, 9, 10]
+            li: a(href="#")= val
+          li: a(href="#") &#187;
+  section
+    .container: .row
+      .head: h2 FAQ
+      .col-md-12
+        +times(5)
+          dl: dt Can I use the form more than once?
+            dd Yes. Distinctio, interdum iaculis sociis egestas necessitatibus posuere elementum porttitor. Qui penatibus consequat? Pharetra nisi. Congue elementum, molestias fuga, saepe impedit tempor rhoncus euismod, voluptate dis.
+

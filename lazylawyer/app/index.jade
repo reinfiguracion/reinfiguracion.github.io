@@ -1,0 +1,174 @@
+extends _layout
+block content
+  .jumbotron
+    .container-fluid
+      .row
+        .col-md-8
+          h1 Customised legal documents for all your legal needs
+          form.form-inline(role="form")
+            .form-group
+              label.sr-only Search legal documents
+              input.form-control.input-lg(type="text", placeholder="Search legal documents...")
+            .form-group
+              button.btn.btn-primary.btn-lg(type="submit") Search
+            .help-block
+              span or &nbsp;
+              a(href="#featured-prod") Browse Featured Templates
+  section.content
+    .container
+      .row
+        .col-md-8
+         h2 The Lazy Lawyer: changing the way people solve their legal problems
+         p The Lazy Lawyer is the brainchild of someone who is passionate about providing open access to justice for all Australians. Our goal is to make legal documents as affordable and accessible as possible.
+         p Legal documents can be confusing for even the most experienced lawyers.
+         p
+           strong Each template purchased from The Lazy Lawyer comes with 1 hour of post sales assistance guiding you through the simple customisation process.
+           | We believe that no question is too stupid so don't hesitate to &nbsp;
+           +link('/','contact us').
+        .col-md-4
+          img(src="assets/images/legal-document-template.png", alt="")
+      .row
+        h3 Benefits of using The Lazy Lawyer:
+        .col-md-3
+          +img-caption('save-money.png','Inexpensive & convenient')
+        .col-md-3
+          +img-caption('quick-write.png','Quick & easy templates')
+        .col-md-3
+          +img-caption('bullet.png','Instant electronic delivery')
+        .col-md-3
+          +img-caption('email.png','Free updates by email')
+      .row
+        .col-md-3
+          +img-caption('chat.png','Written & video instructions')
+        .col-md-3
+          +img-caption('support.png','Telephone & email support')
+        .col-md-3
+          +img-caption('night.png','Peace of mind protection')
+        .col-md-3
+          +img-caption('australian-flag.png','Australian made')
+      .row
+        .col-md-12
+          h2 Why spend time writing complicated legal documents when you can simply use the templates the Lawyers use themselves?
+          p The Lazy Lawyer gives you access to the core documents and templates Lawyers use on a daily basis without having to fork out the exorbitant legal fees. In just one click the legal document of choice is at your fingertips.
+          p.takeaway The Secret? "Productive Laziness"
+          p Productive laziness is all about success, but success with far less effort. Adopt a balanced approach. Focus your energies on those things which will add the greatest value to whatever you’re trying to achieve so that it leaves you with more time to do the things you enjoy.
+          p I am The Lazy Lawyer. Let me challenge your thinking for just one moment. Would you believe me if I was to tell you that lazy does not mean unsuccessful or stupid? Being productively lazy allows you to still achieve those higher goals but on your own terms.
+          p Ever heard of the 80/20 Rule? It states that 80% of the results stem from 20% of the causes. This rule applies to various aspects of life and equally so at large law firms. 80% of the revenue from billables is directly generated from only 20% of the client base. These clients are playing in the big league, they’re the corporations and business tycoons with hefty retainers. Obviously in the firm’s eyes its smart business practice to look after them.
+          p So when an individual comes along, with a legal issue, substantial to that person, the firm views them as small fry and relatively insignificant. Harsh but true. Despite the fact the legal problem you face has the potential to significantly impact your life, the lawyer is unlikely to focus all his efforts on you. Of course you'll be charged handsomely for the service, which you may or may not ultimately be happy with.
+          p So my question to you is this. If you could access exactly what you needed from a lawyer for a tenth of the price would you not consider it? Of course you could attempt to compose the document or binding legal agreement yourself, but why not be smart and have The Lazy Lawyer do it for you? After all with just one click you’re instantly obtaining what you set out to achieve.
+          .takeaway
+            p Remember being lazy isn’t what you think it to be.
+            p Smart Lazy people have an edge over all others.
+  section.featured.alt#featured-prod
+    .container
+      .row
+        h2.text-center Featured Templates
+        .col-md-4
+          +thumbnail-product(
+            "Non-Disclosure Agreement",
+            "Partnerships & Business Agreements",
+            "A Non-Disclosure Agreement protects your confidential business information or inventions revealed during discussions, proposals or negotiations with another party",
+            "79.95")
+          +thumbnail-product(
+            "Power of Attorney: Revocation",
+            "Power of Attorney",
+            "A Revocation of Power of Attorney is a legal document signed by or on behalf of a person who granted a Power of Attorney (the Principal)",
+            "49.95")
+
+        .col-md-4
+          +thumbnail-product(
+            "Airbnb Lease Agreement",
+            "Lease Agreements",
+            "Legally, you have a ‘contract’ with your guests if you have agreed dates, the rental price and paid a deposit – even if everything has been done via email. However, what you",
+            "79.95")
+          +thumbnail-product(
+            "Power of Attorney",
+            "Power of Attorney",
+            "A Power of Attorney is a written authorisation to represent or act on another’s behalf in either private or business or some other legal matter. The person authorising the other to act is known as the declarant, who is",
+            "49.95")
+
+        .col-md-4
+          +thumbnail-product(
+            "Affidavit",
+            "Power of Attorney",
+            "An Affidavit can be used to gather information or an official “affidavit” from witnesses or parties you wish to document. You can use this form to take the first step towards legalising their testimony or evidence in a",
+            "29.95")
+          +thumbnail-product(
+            "Shareholders Agreement",
+            "Shareholders Agreement",
+            "A comprehensive Shareholders Agreement governs the relationship between the Shareholders and the company as well as third parties, by defining the roles and",
+            "199.00")
+      .row: .col-md-12: .text-center
+        +link('/','View all Templates')(class="btn btn-primary")
+
+  section.testimony
+    .container: .row
+      .head
+        h2 Why Australians love The Lazy Lawyer
+        p Here's what they have to say.
+
+      .col-md-6
+        +feedback(
+          'Absolutely impressed with both the legal document package I purchased today and the subsequent customer service I received from Legal123 when I had an issue with the order. Great customer service and thanks heaps. You definitely made my day today.',
+          'Emma Schmidt',
+          'Managing Director, ACME CO.',
+          'test-person.png')
+
+        +feedback(
+          'Legal 123 were the only place I could find the paperwork for a holiday rental agreement that applied to us. Very clear and easy to understand.',
+          'Kenneth Rodriquez',
+          'theislandholidayrentals.com.au',
+          'test-person2.png')
+
+      .col-md-6
+        +feedback(
+          'The letter was great. I actually retyped it onto my own letterhead for more impact. The client didnt pay all that he owed but he did pay some. So now I need the info to take him to court. And with Legal123 I have the confidence to do this.',
+          'Shawn Reed',
+          'Managing Director, ACME CO.',
+          'test-person3.png')
+
+        +feedback(
+          'I was impressed that the website package was so easy to use. I didnt want to find a lawyer and create a workload for my website so the templates were super handy. My legal requirements for my website were done in 5 minutes, giving me more time to get back to business. Thank you legal123.',
+          'Lauren George',
+          'Managing Director, ACME CO.',
+          'test-person4.png')
+      .row: .col-md-12: .text-center
+          +link('/','More Customer Testimonials')(class="btn btn-primary")
+      .row: .col-md-12: .features
+        p.takeaway The Lazy Lawyer as featured on
+        ul.featured-medias.list-inline.list-unstyled
+          li: +img('fair-fax.png')
+          li: +img('business-insider.png')
+          li: +img('savvy.png')
+          li: +img('anthill.png')
+          li: +img('the-age.png')
+          li: +img('smh.png')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
