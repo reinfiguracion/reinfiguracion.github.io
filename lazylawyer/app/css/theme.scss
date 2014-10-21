@@ -1,4 +1,6 @@
 @import '_partials';
+$imagePath : "http://reinfiguracion.github.io/lazylawyer/assets/images";
+
 body {
 	@include SourceSans-Reg;
 	@include font-size(16px,24);
@@ -34,8 +36,8 @@ h6,.h6 {@include font-size(12px); }
 	margin-bottom: 0;
 }
 .jumbotron{
-	background   : url("/assets/images/kate-horman.png") right center no-repeat,
-	url("/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
+	background   : url("#{$imagePath}/kate-horman.png") right center no-repeat,
+	url("#{$imagePath}/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
 	margin-bottom: 0;
 	color        : #fff;
 	padding      : 80px 0;
@@ -59,11 +61,11 @@ h6,.h6 {@include font-size(12px); }
 	}
 	&.category{
 		padding: 50px 0;
-		background   : url("/assets/images/category-banner.jpg") center center no-repeat;
+		background   : url("#{$imagePath}/category-banner.jpg") center center no-repeat;
 		background-size: cover;
 	}
 	&.lawyers{
-		background   : url("/assets/images/lawyer-banner.jpg") center center no-repeat;
+		background   : url("#{$imagePath}/lawyer-banner.jpg") center center no-repeat;
 		background-size: cover;
 	}
 }
