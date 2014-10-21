@@ -36,8 +36,7 @@ h6,.h6 {@include font-size(12px); }
 	margin-bottom: 0;
 }
 .jumbotron{
-	background   : url("#{$imagePath}/kate-horman.png") right center no-repeat,
-	url("#{$imagePath}/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
+	background   : url("#{$imagePath}/kate-horman.png") right center no-repeat;
 	margin-bottom: 0;
 	color        : #fff;
 	padding      : 80px 0;
