@@ -74,7 +74,7 @@ h6, .h6 {
 }
 
 .jumbotron {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/kate-horman.png") right center no-repeat;
+  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/kate-horman.png") right center no-repeat, url("http://reinfiguracion.github.io/lazylawyer/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
   margin-bottom: 0;
   color: #fff;
   padding: 80px 0;
