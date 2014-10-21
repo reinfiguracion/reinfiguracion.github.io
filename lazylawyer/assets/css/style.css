@@ -74,7 +74,7 @@ h6, .h6 {
 }
 
 .jumbotron {
-  background: url("/assets/images/kate-horman.png") right center no-repeat, url("/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
+  background: url("assets/images/kate-horman.png") right center no-repeat, url("assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
   margin-bottom: 0;
   color: #fff;
   padding: 80px 0;
@@ -101,11 +101,11 @@ h6, .h6 {
 }
 .jumbotron.category {
   padding: 50px 0;
-  background: url("/assets/images/category-banner.jpg") center center no-repeat;
+  background: url("assets/images/category-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 .jumbotron.lawyers {
-  background: url("/assets/images/lawyer-banner.jpg") center center no-repeat;
+  background: url("assets/images/lawyer-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -329,7 +329,7 @@ section .head {
 }
 
 .bag-ico {
-  background: url("../images/bag-ico.png") no-repeat;
+  background: url("assets/images/bag-ico.png") no-repeat;
   width: 18px;
   height: 18px;
   display: inline-block;
