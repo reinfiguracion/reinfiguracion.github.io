@@ -1,0 +1,65 @@
+extends _layout
+block content
+  .jumbotron.testimonials
+    .container-fluid
+      .row
+        .col-md-12.text-center
+          h1 Legal Document Starter Kit designed for lawyers who need a diverse range of comprehensive legal documents
+          +link('/','Learn More')(class="btn btn-primary btn-lg")
+
+  section.testimony
+    .container
+      .row
+        .head
+          h2 Why Australians love The Lazy Lawyer
+          p Here's what they have to say.
+
+        .col-md-6
+          +feedback(
+            'Absolutely impressed with both the legal document package I purchased today and the subsequent customer service I received from Legal123 when I had an issue with the order. Great customer service and thanks heaps. You definitely made my day today.',
+            'Emma Schmidt',
+            'Managing Director, ACME CO.',
+            'test-person.png')
+
+          +feedback(
+            'Legal 123 were the only place I could find the paperwork for a holiday rental agreement that applied to us. Very clear and easy to understand.',
+            'Kenneth Rodriquez',
+            'theislandholidayrentals.com.au',
+            'test-person2.png')
+
+          +feedback(
+            'I was impressed that the website package was so easy to use. I didnt want to find a lawyer and create a workload for my website so the templates were super handy. My legal requirements for my website were done in 5 minutes, giving me more time to get back to business. Thank you legal123.',
+            'Lauren George',
+            'Managing Director, ACME CO.',
+            'test-person4.png')
+
+        .col-md-6
+          +feedback(
+            'The letter was great. I actually retyped it onto my own letterhead for more impact. The client didnt pay all that he owed but he did pay some. So now I need the info to take him to court. And with Legal123 I have the confidence to do this.',
+            'Shawn Reed',
+            'Managing Director, ACME CO.',
+            'test-person3.png')
+
+          +feedback(
+            'I was impressed that the website package was so easy to use. I didnt want to find a lawyer and create a workload for my website so the templates were super handy. My legal requirements for my website were done in 5 minutes, giving me more time to get back to business. Thank you legal123.',
+            'Lauren George',
+            'Managing Director, ACME CO.',
+            'test-person4.png')
+
+          +feedback(
+            'I was impressed that the website package was so easy to use. I didnt want to find a lawyer and create a workload for my website so the templates were super handy. My legal requirements for my website were done in 5 minutes, giving me more time to get back to business. Thank you legal123.',
+            'Lauren George',
+            'Managing Director, ACME CO.',
+            'test-person4.png')
+
+    .row: .col-md-12: .text-center
+        ul.pagination.pagination-lg
+          li.disabled
+            a(href="#") &#171;
+          li.active: a(href="#") 1
+            span.sr-only (current)
+          each val in [2, 3, 4, 10]
+            li: a(href="#")= val
+          li: a(href="#") &#187;
+
+

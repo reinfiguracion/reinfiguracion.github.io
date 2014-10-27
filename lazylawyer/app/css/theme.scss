@@ -72,6 +72,10 @@ h6,.h6 {@include font-size(12px); }
 		background   : url("#{$imagePath}/business-banner.jpg") center center no-repeat;
 		background-size: cover;
 	}
+	&.testimonials{
+		background   : url("#{$imagePath}/testimonials-banner.jpg") center center no-repeat;
+		background-size: cover;
+	}
 }
 a {
 	color: #02baf2;

@@ -111,6 +111,10 @@ h6, .h6 {
   background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/business-banner.jpg") center center no-repeat;
   background-size: cover;
 }
+.jumbotron.testimonials {
+  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/testimonials-banner.jpg") center center no-repeat;
+  background-size: cover;
+}
 
 a {
   color: #02baf2;
