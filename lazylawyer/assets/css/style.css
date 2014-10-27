@@ -1,6 +1,7 @@
 @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic,600italic,700italic";
 @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic,600italic,700italic";
 body {
+  overflow: hidden;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -112,9 +113,19 @@ h6, .h6 {
   background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/business-banner.jpg") center center no-repeat;
   background-size: cover;
 }
-.jumbotron.testimonials {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/testimonials-banner.jpg") center center no-repeat;
+.jumbotron.contact {
+  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
   background-size: cover;
+}
+.jumbotron.testimonials {
+  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/testimonial-banner.jpg") center center no-repeat;
+  background-size: cover;
+}
+.jumbotron.testimonials form {
+  margin-top: 0;
+}
+.jumbotron.testimonials input[type="text"], .jumbotron.testimonials input[type="email"] {
+  width: 300px;
 }
 
 a {
@@ -322,6 +333,11 @@ header {
 }
 header .input-group, header .btn-group {
   margin: 16px 0;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
 }
 
 section {

@@ -2,6 +2,7 @@
 $imagePath : "http://reinfiguracion.github.io/lazylawyer/assets/images";
 
 body {
+	overflow: hidden;
 	@include SourceSans-Reg;
 	@include font-size(16px,24);
 	color: #646464;
@@ -72,9 +73,19 @@ h6,.h6 {@include font-size(12px); }
 		background   : url("#{$imagePath}/business-banner.jpg") center center no-repeat;
 		background-size: cover;
 	}
-	&.testimonials{
-		background   : url("#{$imagePath}/testimonials-banner.jpg") center center no-repeat;
+	&.contact{
+		background   : url("#{$imagePath}/home-banner-2560x500-light.jpg") center center no-repeat;
 		background-size: cover;
+	}
+	&.testimonials{
+		background   : url("#{$imagePath}/testimonial-banner.jpg") center center no-repeat;
+		background-size: cover;
+		form{
+			margin-top: 0;
+		}
+		input[type="text"],input[type="email"]{
+			width: 300px;
+		}
 	}
 }
 a {
