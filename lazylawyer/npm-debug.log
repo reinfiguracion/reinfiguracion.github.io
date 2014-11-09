@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grubnt' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json lazylawyer@0.1.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grubnt', null ]
+7 verbose cache add name=undefined spec="grubnt" args=["grubnt",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grubnt',
+8 verbose parsed url   path: 'grubnt',
+8 verbose parsed url   href: 'grubnt' }
+9 silly lockFile 65de45b7-grubnt grubnt
+10 verbose lock grubnt C:\Users\Rein\AppData\Roaming\npm-cache\65de45b7-grubnt.lock
+11 silly lockFile 65de45b7-grubnt grubnt
+12 silly lockFile 65de45b7-grubnt grubnt
+13 verbose addNamed [ 'grubnt', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile b13c41f7-grubnt grubnt@
+16 verbose lock grubnt@ C:\Users\Rein\AppData\Roaming\npm-cache\b13c41f7-grubnt.lock
+17 silly addNameRange { name: 'grubnt', range: '*', hasData: false }
+18 verbose request where is /grubnt
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id bbc2f843fc8ee71b
+21 verbose url raw /grubnt
+22 verbose url resolving [ 'https://registry.npmjs.org/', './grubnt' ]
+23 verbose url resolved https://registry.npmjs.org/grubnt
+24 verbose request where is https://registry.npmjs.org/grubnt
+25 info trying registry request attempt 1 at 17:58:22
+26 http GET https://registry.npmjs.org/grubnt
+27 http 404 https://registry.npmjs.org/grubnt
+28 verbose headers { date: 'Sun, 09 Nov 2014 09:58:23 GMT',
+28 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '52',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   'x-served-by': 'cache-hk93-HKG',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1415527103.031218,VS0,VE234',
+28 verbose headers   'keep-alive': 'timeout=10, max=50',
+28 verbose headers   connection: 'Keep-Alive' }
+29 silly registry.get cb [ 404,
+29 silly registry.get   { date: 'Sun, 09 Nov 2014 09:58:23 GMT',
+29 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly registry.get     'content-type': 'application/json',
+29 silly registry.get     'cache-control': 'max-age=0',
+29 silly registry.get     'content-length': '52',
+29 silly registry.get     'accept-ranges': 'bytes',
+29 silly registry.get     via: '1.1 varnish',
+29 silly registry.get     age: '0',
+29 silly registry.get     'x-served-by': 'cache-hk93-HKG',
+29 silly registry.get     'x-cache': 'MISS',
+29 silly registry.get     'x-cache-hits': '0',
+29 silly registry.get     'x-timer': 'S1415527103.031218,VS0,VE234',
+29 silly registry.get     'keep-alive': 'timeout=10, max=50',
+29 silly registry.get     connection: 'Keep-Alive' } ]
+30 silly lockFile b13c41f7-grubnt grubnt@
+31 silly lockFile b13c41f7-grubnt grubnt@
+32 error 404 404 Not Found: grubnt
+32 error 404
+32 error 404 'grubnt' is not in the npm registry.
+32 error 404 You should bug the author to publish it
+32 error 404 It was specified as a dependency of 'lazylawyer'
+32 error 404
+32 error 404 Note that you can also install from a
+32 error 404 tarball, folder, or http url, or git url.
+33 error System Windows_NT 6.1.7600
+34 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grubnt"
+35 error cwd c:\xampp\htdocs\reinfiguracion.github.io\lazylawyer
+36 error node -v v0.10.33
+37 error npm -v 1.4.28
+38 error code E404
+39 verbose exit [ 1, true ]

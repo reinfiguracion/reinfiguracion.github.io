@@ -1,4 +1,12 @@
 extends _layout
+block notify
+  .notify.alert.alert-warning.navbar-fixed-bottom
+    .container-fluid: .row
+      .col-md-12
+          a.btn.btn-success.btn-sm.pull-right(href="cart.html")
+            strong VIEW CART &raquo;
+          p "Product Name" was successfully added to your cart. &nbsp;
+
 block content
   .jumbotron.category
     .container-fluid

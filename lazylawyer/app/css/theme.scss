@@ -1,8 +1,8 @@
 @import '_partials';
 $imagePath : "http://reinfiguracion.github.io/lazylawyer/assets/images";
+/* $imagePath : "../images"; */
 
 body {
-	overflow: hidden;
 	@include SourceSans-Reg;
 	@include font-size(16px,24);
 	color: #646464;
@@ -255,3 +255,88 @@ dl{
 .spacer{
 	margin: 10px 0;
 }
+
+.alert {
+	padding: 10px;
+	border-radius: 0;
+  border: none;
+  > strong {
+    font-family: "SourceSansProBold", Helvetica, Arial, sans-serif;
+  }
+}
+
+.alert-dismissable .close {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: inherit;
+  margin-top: -8px;
+  opacity: 1;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.close {
+  font-size: 16px;
+}
+
+.alert-primary {
+  background-color: rgba(2, 186, 242, 0.2);
+  color: #009dcd;
+  .alert-link {
+    color: #00769a;
+  }
+  .close {
+    color: #02baf2;
+  }
+}
+
+.alert-success {
+	color: #fff;
+  background-color: #11b300;
+  .alert-link {
+    color: #1d6c66;
+  }
+  .close {
+    color: #3eb5ac;
+  }
+}
+
+.alert-info {
+  background-color: rgba(168, 140, 213, 0.2);
+  color: #9175bd;
+  .alert-link {
+    color: #7652ad;
+  }
+  .close {
+    color: #a88cd5;
+  }
+}
+
+.alert-warning {
+  background-color: #ffc000;
+  color: rgba(0,0,0,0.5);
+  .alert-link {
+    color: #efa736;
+  }
+  .close {
+    color: #fad46b;
+  }
+}
+
+.alert-danger {
+  background-color: rgba(248, 69, 69, 0.2);
+  color: #cc0000;
+  .alert-link {
+    color: #990000;
+  }
+  .close {
+    color: #f84545;
+  }
+}
+
+.input-sm{
+	font-size: 13px;
+}
+

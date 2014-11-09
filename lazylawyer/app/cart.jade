@@ -1,0 +1,44 @@
+extends _layout-shop
+block content
+  .jumbotron.category
+    .container-fluid
+      .row
+          h1.text-center Shopping Cart
+  section
+    .container: .row
+      .col-md-12
+        table.table.table-hover
+          thead
+            tr
+              th Template
+              th Price
+              th(style="width: 120px;") Quantity
+              th.text-center Total
+          tbody
+            tr
+              td
+                a.text-danger(href="") &times; &nbsp;  &nbsp;
+                a(href="") Basic Contract
+              td $99.99
+              td: input.input-sm.form-control(type="number", min="1", value="1")
+              td.text-center $100
+            tr
+              td
+                a.text-danger(href="") &times; &nbsp;  &nbsp;
+                a(href="") Last Will and Testament
+              td $99.99
+              td: input.input-sm.form-control(type="number", min="1", value="1")
+              td.text-center $100
+            tr
+              td(colspan="3").text-right
+                strong Order Total:
+              td.text-center
+                strong $200
+            tr
+              td(colspan="2")
+              td(colspan="2").text-right
+                button.btn.btn-danger.btn-block(type="button")
+                  strong PROCEED TO CHECKOUT
+
+
+
