@@ -1,6 +1,6 @@
 @import '_partials';
 $imagePath : "http://reinfiguracion.github.io/lazylawyer/assets/images";
-// $imagePath : "../images";
+//$imagePath : "../images";
 
 body {
 	@include SourceSans-Reg;
@@ -38,7 +38,7 @@ h6,.h6 {@include font-size(12px); }
 }
 .jumbotron{
 	background   : url("#{$imagePath}/kate-horman.png") right center no-repeat,
-								 url("#{$imagePath}/home-banner-2560x500-light.jpg") center center no-repeat;
+	url("#{$imagePath}/home-banner-2560x500-light.jpg") center center no-repeat;
 	margin-bottom: 0;
 	color        : #fff;
 	padding      : 80px 0;
@@ -259,84 +259,103 @@ dl{
 .alert {
 	padding: 10px;
 	border-radius: 0;
-  border: none;
-  > strong {
-    font-family: "SourceSansProBold", Helvetica, Arial, sans-serif;
-  }
+	border: none;
+	> strong {
+		font-family: "SourceSansProBold", Helvetica, Arial, sans-serif;
+	}
 }
 
 .alert-dismissable .close {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  color: inherit;
-  margin-top: -8px;
-  opacity: 1;
-  &:hover {
-    opacity: 0.5;
-  }
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	color: inherit;
+	margin-top: -8px;
+	opacity: 1;
+	&:hover {
+		opacity: 0.5;
+	}
 }
 
 .close {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .alert-primary {
-  background-color: rgba(2, 186, 242, 0.2);
-  color: #009dcd;
-  .alert-link {
-    color: #00769a;
-  }
-  .close {
-    color: #02baf2;
-  }
+	background-color: rgba(2, 186, 242, 0.2);
+	color: #009dcd;
+	.alert-link {
+		color: #00769a;
+	}
+	.close {
+		color: #02baf2;
+	}
 }
 
 .alert-success {
 	color: #fff;
-  background-color: #11b300;
-  .alert-link {
-    color: #1d6c66;
-  }
-  .close {
-    color: #3eb5ac;
-  }
+	background-color: #11b300;
+	.alert-link {
+		color: #1d6c66;
+	}
+	.close {
+		color: #3eb5ac;
+	}
 }
 
 .alert-info {
-  background-color: rgba(168, 140, 213, 0.2);
-  color: #9175bd;
-  .alert-link {
-    color: #7652ad;
-  }
-  .close {
-    color: #a88cd5;
-  }
+	background-color: rgba(168, 140, 213, 0.2);
+	color: #9175bd;
+	.alert-link {
+		color: #7652ad;
+	}
+	.close {
+		color: #a88cd5;
+	}
 }
 
 .alert-warning {
-  background-color: #ffc000;
-  color: rgba(0,0,0,0.5);
-  .alert-link {
-    color: #efa736;
-  }
-  .close {
-    color: #fad46b;
-  }
+	background-color: #ffc000;
+	color: rgba(0,0,0,0.5);
+	.alert-link {
+		color: #efa736;
+	}
+	.close {
+		color: #fad46b;
+	}
 }
 
 .alert-danger {
-  background-color: rgba(248, 69, 69, 0.2);
-  color: #cc0000;
-  .alert-link {
-    color: #990000;
-  }
-  .close {
-    color: #f84545;
-  }
+	background-color: rgba(248, 69, 69, 0.2);
+	color: #cc0000;
+	.alert-link {
+		color: #990000;
+	}
+	.close {
+		color: #f84545;
+	}
 }
 
 .input-sm{
 	font-size: 13px;
 }
 
+.breadcrumb.steps{
+	color: #ccc;
+	li.active{
+		color: #fff;
+	}
+	> li+li:before{
+		content: "\00bb";
+		padding: 0 5px;
+		color: #ccc;
+	}
+}
+
+label.required{
+	&:after{
+		color: #f84545;
+		content: "*";
+		font-weight: 400;
+	}
+}

@@ -26,15 +26,15 @@ module.exports = function(grunt) {
         indent_scripts: 'separate',
         preserve_newlines: true,
         unformatted: [
-          "pre", "a", "span"
+        "pre", "a", "span"
         ]
       },
       all: {
-          expand: true,
-          cwd: '',
-          ext: '.html',
-          src: ['*.html'],
-          dest: ''
+        expand: true,
+        cwd: '',
+        ext: '.html',
+        src: ['*.html'],
+        dest: ''
       }
     },
     jade: {
@@ -51,44 +51,45 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      options: {
-        livereload: true,
-        nospawn: true
-      },
-      css: {
-        files: ['app/css/**/*'],
-        tasks: ['compass']
-      },
-      js: {
-        files: ['app/js/**/*.js'],
-        tasks: ['compass']
-      },
-      templates: {
-        files: ["app/*.jade"],
-        tasks: ['jade', 'prettify'],
-        options: {
-          nospawn: true
-        }
-      }
+    options: {
+      livereload: true,
+      nospawn: true,
+      tasks: ['newer:all']
     },
-    connect: {
-      server: {
-        options: {
-          livereload: true,
-          base: './',
-          port: 9000
-        }
+    css: {
+      files: ['app/css/**/*'],
+      tasks: ['compass']
+    },
+    js: {
+      files: ['app/js/**/*.js'],
+      tasks: ['compass']
+    },
+    templates: {
+      files: ["app/*.jade"],
+      tasks: ['jade', 'prettify'],
+      options: {
+        nospawn: true
       }
     }
-  });
+  },
+  connect: {
+    server: {
+      options: {
+        livereload: true,
+        base: './',
+        port: 9000
+      }
+    }
+  }
+});
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-prettify');
   grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   grunt.registerTask('default', ['compass', 'jade', 'connect:server', 'watch']);

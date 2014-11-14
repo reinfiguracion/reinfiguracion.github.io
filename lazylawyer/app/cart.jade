@@ -3,7 +3,11 @@ block content
   .jumbotron.category
     .container-fluid
       .row
-          h1.text-center Shopping Cart
+          h1.text-center Shopping Cart Summary
+          ol.breadcrumb.steps.text-center
+            li.active Shopping Cart
+            li Checkout Details
+            li Order Complete
   section
     .container: .row
       .col-md-12
@@ -35,10 +39,15 @@ block content
               td.text-center
                 strong $200
             tr
-              td(colspan="2")
+              td(colspan="1")
+              td.text-right
+                button.btn.btn-default(type="button")
+                  strong Update Cart
               td(colspan="2").text-right
-                button.btn.btn-danger.btn-block(type="button")
+                a.btn.btn-success.btn-block(href="checkout.html")
                   strong PROCEED TO CHECKOUT
+                //- button.btn.btn-danger.btn-block(type="button")
+                //-   strong PROCEED TO CHECKOUT
 
 
 

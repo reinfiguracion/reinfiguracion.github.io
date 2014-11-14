@@ -1,0 +1,109 @@
+extends _layout-shop
+block content
+  .jumbotron.category
+    .container-fluid
+      .row
+          h1.text-center Checkout Details
+          ol.breadcrumb.steps.text-center
+            li Shopping Cart
+            li.active Checkout Details
+            li Order Complete
+  section
+    .container: .row
+      .col-md-12
+        h3 Billing Details
+        hr
+        form(id="", method="", action="")
+
+          .row: .form-group.clearfix
+            .col-md-6
+              label.required First Name
+              input.form-control(type="text")
+            .col-md-6
+              label.required Last Name
+              input.form-control(type="text")
+
+          .row: .form-group.clearfix
+            .col-md-6
+              label.required Email Address
+              input.form-control(type="email")
+            .col-md-4
+              label.required Contact Number
+              input.form-control(type="text")
+
+           .row: .form-group.clearfix
+            .col-md-12
+              label.required Country
+              select.form-control
+                option Option 1
+                option Option 2
+                option Option 3
+                option Option 4
+                option Option 5
+          .row: .form-group.clearfix
+            .col-md-6
+              label.required Address
+              input.form-control(type="text", placeholder="Street Address")
+            .col-md-6
+              label &nbsp;
+              input.form-control(type="text", placeholder="Apartment, suite, unit etc. (optional)")
+          .row: .form-group.clearfix
+            .col-md-4
+              label.required Town / City
+              input.form-control(type="text", placeholder="Street Address")
+            .col-md-4
+              label.required State
+              select.form-control(name="")
+                option(value="") Victoria
+                option(value="") Victoria
+                option(value="") Victoria
+                option(value="") Victoria
+                option(value="") Victoria
+            .col-md-4
+              label Postcode
+              input.form-control(type="text")
+      //- YOUR ORDER
+      .col-md-12
+        br
+        h3 Your Order
+        hr
+        table.table.table-Striped
+          thead
+            tr
+              th Template
+              th Price
+              th(style="width: 120px;") Quantity
+              th.text-center Total
+          tbody
+            tr
+              td Basic Contract
+              td $99.99
+              td 2
+              td.text-center $100
+            tr
+              td Last Will and Testament
+              td $99.99
+              td 1
+              td.text-center $100
+            tr
+              td(colspan="3").text-right
+                strong Order Total:
+              td.text-center
+                strong $200
+
+      .col-md-12.text-right(style="margin-bottom: 40px;")
+        img(src="assets/images/paypal.png", alt="")
+        p.help-block Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+
+
+
+      .col-md-12
+        button.btn.btn-success.btn-block.btn-lg(type="button")
+          strong PROCEED TO PAYPAL &raquo;
+        .checkbox
+          label
+            input(type="checkbox", checked)
+            | I’ve read and accept the terms & conditions
+
+
+

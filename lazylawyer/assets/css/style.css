@@ -74,7 +74,7 @@ h6, .h6 {
 }
 
 .jumbotron {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/kate-horman.png") right center no-repeat, url("http://reinfiguracion.github.io/lazylawyer/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
+  background: url("../images/kate-horman.png") right center no-repeat, url("../images/home-banner-2560x500-light.jpg") center center no-repeat;
   margin-bottom: 0;
   color: #fff;
   padding: 80px 0;
@@ -101,23 +101,23 @@ h6, .h6 {
 }
 .jumbotron.category {
   padding: 50px 0;
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/category-banner.jpg") center center no-repeat;
+  background: url("../images/category-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 .jumbotron.lawyers {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/lawyer-banner.jpg") center center no-repeat;
+  background: url("../images/lawyer-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 .jumbotron.business {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/business-banner.jpg") center center no-repeat;
+  background: url("../images/business-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 .jumbotron.contact {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/home-banner-2560x500-light.jpg") center center no-repeat;
+  background: url("../images/home-banner-2560x500-light.jpg") center center no-repeat;
   background-size: cover;
 }
 .jumbotron.testimonials {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/testimonial-banner.jpg") center center no-repeat;
+  background: url("../images/testimonial-banner.jpg") center center no-repeat;
   background-size: cover;
 }
 .jumbotron.testimonials form {
@@ -411,6 +411,24 @@ dl dd {
   font-size: 13px;
 }
 
+.breadcrumb.steps {
+  color: #ccc;
+}
+.breadcrumb.steps li.active {
+  color: #fff;
+}
+.breadcrumb.steps > li + li:before {
+  content: "\00bb";
+  padding: 0 5px;
+  color: #ccc;
+}
+
+label.required:after {
+  color: #f84545;
+  content: "*";
+  font-weight: 400;
+}
+
 header {
   margin: 10px 0;
 }
@@ -436,7 +454,7 @@ section .head {
 }
 
 .bag-ico {
-  background: url("http://reinfiguracion.github.io/lazylawyer/assets/images/bag-ico.png") no-repeat;
+  background: url("../images/bag-ico.png") no-repeat;
   width: 18px;
   height: 18px;
   display: inline-block;
